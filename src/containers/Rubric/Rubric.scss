@@ -32,17 +32,20 @@
   }
 }
 
-.criterion-feedback {
-  margin-top: 1rem;  
-  textarea.form-control:focus~.pgn__form-control-floating-label .pgn__form-control-floating-label-text,
-  textarea.form-control.has-value~.pgn__form-control-floating-label .pgn__form-control-floating-label-text {
+.criterion-feedback,
+.rubric-feedback {
+  margin-top: 1rem;
+
+  // Target the floating label text when the textarea is focused or has a value
+  // We use specific classes and !important to override Paragon defaults
+  textarea.form-control:focus ~ .pgn__form-control-floating-label .pgn__form-control-floating-label-text,
+  textarea.form-control.has-value ~ .pgn__form-control-floating-label .pgn__form-control-floating-label-text {
     background-color: #ffffff !important;
     background: #ffffff !important;
     opacity: 1 !important;
     padding: 0 5px;
     z-index: 10;
   }
-  
 }
 
 .popover.overlay-help-popover {
