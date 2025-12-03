@@ -36,7 +36,8 @@
   margin-top: 1rem;  
   .form-control:focus~.pgn__form-control-floating-label .pgn__form-control-floating-label-text,
   .form-control.has-value~.pgn__form-control-floating-label .pgn__form-control-floating-label-text {
-    background-color: #ffffff;
+    background-color: #ffffff !important;
+;
     padding: 0 5px;
   }
   
