@@ -33,7 +33,13 @@
 }
 
 .criterion-feedback {
-  margin-top: 1rem;
+  margin-top: 1rem;  
+  .form-control:focus~.pgn__form-control-floating-label .pgn__form-control-floating-label-text,
+  .form-control.has-value~.pgn__form-control-floating-label .pgn__form-control-floating-label-text {
+    background-color: #ffffff;
+    padding: 0 5px;
+  }
+  
 }
 
 .popover.overlay-help-popover {
