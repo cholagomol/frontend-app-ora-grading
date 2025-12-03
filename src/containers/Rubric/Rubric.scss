@@ -34,18 +34,13 @@
 
 .criterion-feedback {
   margin-top: 1rem;  
-  &:focus-within .pgn__form-control-floating-label .pgn__form-control-floating-label-text {
+  textarea.form-control:focus~.pgn__form-control-floating-label .pgn__form-control-floating-label-text,
+  textarea.form-control.has-value~.pgn__form-control-floating-label .pgn__form-control-floating-label-text {
     background-color: #ffffff !important;
     background: #ffffff !important;
     opacity: 1 !important;
     padding: 0 5px;
-  }
-
-  .has-value~.pgn__form-control-floating-label .pgn__form-control-floating-label-text {
-    background-color: #ffffff !important;
-    background: #ffffff !important;
-    opacity: 1 !important;
-    padding: 0 5px;
+    z-index: 10;
   }
   
 }
